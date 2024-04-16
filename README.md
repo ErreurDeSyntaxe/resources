@@ -1,10 +1,10 @@
-# Simple Template
+# Web Dev Resources
 
-A template for practice or simple projects (without webpack or ESlint)
+A reference page with resources used in the design and development of web pages.
 
 ## About the Project
 
-### Preview
+<!-- ### Preview
 
 <div align='center'>
     <img src='./README/project-preview.png'>
@@ -12,44 +12,50 @@ A template for practice or simple projects (without webpack or ESlint)
 
 ### Live
 
-<a href='http://google.com/'>Google</a>
+<a href='http://google.com/'>Google</a> -->
 
 ### Objective
 
-The goal of the project is to learn xyz by building abc.
-
-###### Project Statement
-
-<a href='http://theodinproject.com/'>The Odin Project</a> (Month Year)
+The goal of the project is to collect useful resources and present them in a
+useful way.
 
 ### Features
 
-- Add something
+- Web development resources
+- Web design resources
+<!-- - Add something
 - Edit something
 - Remove something
-- Allow users to complicate dev's job
+- Allow users to complicate dev's job -->
 
 ## Built With
 
 <img src='./README/html5-logo.svg' style='width:40px; height: 40px' >
 <img src='./README/css3-logo.svg' style='width:40px; height: 40px' >
-<img src='./README/javascript-logo.svg' style='width:40px; height: 40px' >
-<img src='./README/webpack-logo.svg' style='width:40px; height: 40px' >
+<!-- <img src='./README/javascript-logo.svg' style='width:40px; height: 40px' > -->
 
 ## To-Do
 
 - [x] Understand the objectives
 - [ ] Plan
-  - [ ] Logic
-  - [ ] UI
-- [ ] Fix bugs
-  - [ ] Wrong date
-  - [ ] Layout on resize
+  - [ ] Write themes
+  - [ ] Filter current "favorites" in Firefox
+  - [ ] Barebone UI
+    - [ ] Header
+    - [ ] Sections
+      - [ ] Resource template
+    - [ ] Sidebar to jump to sections
+    - [ ] Foooter
+  - [ ] Responsive UI
+    - [ ] Mobile first
+    - [ ] PC
 
-## Lessons & Difficulties
+<!-- ## Lessons & Difficulties
 
-Some lessons learned along the way
+Some lessons learned along the way -->
 
 ## Diary
 
-Some thoughts regarding the project
+My bookmarks bar has become too messy. It is no longer useful. It's time
+to clean up, gather better resources, practice development skill, and
+work on a personal project.
