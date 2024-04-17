@@ -136,6 +136,7 @@ useful way.
     - [ ] Resource template
   - [ ] Sidebar to jump to sections
   - [ ] Foooter
+  - [ ] Dynamically Populate Page
 - [ ] Responsive UI
   - [ ] Mobile first
   - [ ] PC
