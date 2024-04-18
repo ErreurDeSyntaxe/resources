@@ -96,6 +96,7 @@ useful way.
     - [x] Font Squirrel (https://www.fontsquirrel.com/)
     - [x] Top 100 Fonts (https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380)
     - [x] Type Scale (https://typescale.com/)
+    - [x] Character Count (https://wordcounter.net/character-count)
   - [x] Colors
     - [x] Open Color (https://yeun.github.io/open-color/)
     - [x] Tailwind (https://tailwindcss.com/docs/customizing-colors)
