@@ -81,7 +81,7 @@ useful way.
     - [x] Font Rules (6 img)
     - [x] Colors Meaning (img)
     - [x] Colors Rules (5 img)
-    - [ ] Images Rules (img)
+    - [x] Images Rules (11 img)
     - [ ] Icons (img)
     - [ ] Shadows (img)
     - [ ] Border-Radius (img)
@@ -95,6 +95,7 @@ useful way.
     - [x] Google (https://fonts.google.com/)
     - [x] Font Squirrel (https://www.fontsquirrel.com/)
     - [x] Top 100 Fonts (https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380)
+    - [x] Type Scale (https://typescale.com/)
   - [x] Colors
     - [x] Open Color (https://yeun.github.io/open-color/)
     - [x] Tailwind (https://tailwindcss.com/docs/customizing-colors)
@@ -110,6 +111,7 @@ useful way.
     - [x] Random User Generator (https://randomuser.me/)
     - [x] Coverr Videos (https://coverr.co/)
     - [x] Draw Kit (https://www.drawkit.com/)
+    - [x] Squoosh (https://squoosh.app/)
     - [x] MidJourney Prompt Guide (https://www.reddit.com/r/ChatGPT/comments/12v900o/ultimate_chatgpt_prompts_midjourney_library_1200/)
     - [x] MidJourney Parameters Guide (https://www.reddit.com/r/midjourney/comments/11k09ey/how_to_use_midjourney_advanced_prompts_and/)
   - [x] Icons
