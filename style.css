@@ -59,3 +59,9 @@ body {
 .resource-link:active {
   color: #fdb827;
 }
+
+.section-header-img {
+  stroke: #23120b;
+  fill: #23120b;
+  width: 50px;
+}
