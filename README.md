@@ -78,10 +78,10 @@ useful way.
   - [ ] Design
     - [x] Design Aspects (img)
     - [x] Website Personalities (img)
-    - [x] Font Rules (6 img)
+    - [x] Font Rules (img)
     - [x] Colors Meaning (img)
-    - [x] Colors Rules (5 img)
-    - [x] Images Rules (11 img)
+    - [x] Colors Rules (img)
+    - [x] Images Rules (img)
     - [ ] Icons (img)
     - [ ] Shadows (img)
     - [ ] Border-Radius (img)
@@ -147,9 +147,10 @@ useful way.
   - [ ] Testing
   - [ ] Node.js
 
-<!-- ## Lessons & Difficulties
+## Lessons & Difficulties
 
-Some lessons learned along the way -->
+Reading HTML is difficult. I decided to use comments to separate sections
+and make parsing all the tags easier. 
 
 ## Diary
 
