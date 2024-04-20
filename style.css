@@ -1,4 +1,24 @@
-/* Template CSS File */
+/* SPACING SCALE */
+
+/* FONT SIZE SCALE */
+/* 61.04px 48.83px 39.06px 31.25px 25px 20px 16px 12.8px */
+
+/* COLOR PALETTE */
+/* 
+Main: #21209C
+Tints: #3736a6 #4d4db0 #6463ba #7a79c4 #9090ce
+Shades: #1e1d8c #1a1a7d #17166d #14135e #11104e
+
+Accent: #fdb827
+Tints: #fdbf3d #fdc652 #fecd68 #fed47d #fedc93
+Shades: #e4a623 #ca931f #b1811b #986e17 #7f5c14
+
+Gray: #23120B
+Tints: #392a23 #4f413c #655954 #7b716d #918985
+Shades: #20100a #1c0e09 #190d08 #150b07 #120906
+
+Background: #F1F1F1
+*/
 
 @font-face {
   font-family: 'Roboto';
@@ -15,9 +35,27 @@
 }
 
 body {
-  padding: 0.6rem;
+  padding: 20px;
+  color: #23120b;
+  background-color: #f1f1f1;
 }
 
-h1 {
-  color: red;
+/* PAGE HEADER STYLING */
+.page-header {
+}
+.page-header-title {
+}
+
+/* LINK STYLING */
+/* Added a paragraph around the <a> instead of display:block */
+/* .resource-link {
+  display: block;
+} */
+.resource-link:link,
+.resource-link:visited {
+  color: #21209c;
+}
+.resource-link:hover,
+.resource-link:active {
+  color: #fdb827;
 }
