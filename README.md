@@ -80,12 +80,12 @@ useful way.
     - [ ] Components & Layout (img)
     - [ ] Landbook (https://land-book.com/)
     - [ ] One Page Love (https://onepagelove.com/inspiration)
-  - [ ] Fonts
-    - [ ] Google (https://fonts.google.com/)
-    - [ ] Font Squirrel (https://www.fontsquirrel.com/)
-    - [ ] Top 100 Fonts (https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380)
-    - [ ] Type Scale (https://typescale.com/)
-    - [ ] Character Count (https://wordcounter.net/character-count)
+  - [x] Fonts
+    - [x] Google (https://fonts.google.com/)
+    - [x] Font Squirrel (https://www.fontsquirrel.com/)
+    - [x] Top 100 Fonts (https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380)
+    - [x] Type Scale (https://typescale.com/)
+    - [x] Character Count (https://wordcounter.net/character-count)
   - [ ] Colors
     - [ ] Open Color (https://yeun.github.io/open-color/)
     - [ ] Tailwind (https://tailwindcss.com/docs/customizing-colors)
