@@ -86,12 +86,12 @@ useful way.
     - [x] Top 100 Fonts (https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380)
     - [x] Type Scale (https://typescale.com/)
     - [x] Character Count (https://wordcounter.net/character-count)
-  - [ ] Colors
-    - [ ] Open Color (https://yeun.github.io/open-color/)
-    - [ ] Tailwind (https://tailwindcss.com/docs/customizing-colors)
-    - [ ] Color Hunt (https://www.colorhunt.co/)
-    - [ ] Tints & Shades (https://maketintsandshades.com/)
-    - [ ] Swiss Army Knife (https://coolors.co/)
+  - [x] Colors
+    - [x] Open Color (https://yeun.github.io/open-color/)
+    - [x] Tailwind (https://tailwindcss.com/docs/customizing-colors)
+    - [x] Color Hunt (https://www.colorhunt.co/)
+    - [x] Tints & Shades (https://maketintsandshades.com/)
+    - [x] Swiss Army Knife (https://coolors.co/)
   - [ ] Images
     - [ ] Unsplash (https://unsplash.com/)
     - [ ] Pexels (https://www.pexels.com/)
