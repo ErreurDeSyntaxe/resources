@@ -49,31 +49,19 @@ useful way.
     - [ ] Airbnb JavaScript Guide (https://github.com/airbnb/javascript)
     - [ ] Idiomatic JavaScript (https://github.com/rwaldron/idiomatic.js)
     - [ ] Array Methods (img)
+    - [ ] Array Methods Cheat Sheet (https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
     - [ ] Webpack (https://webpack.js.org/guides/getting-started/)
     - [ ] Building a House (https://www.ayweb.dev/blog/building-a-house-from-the-inside-out)
     - [ ] Zahra (https://github.com/zahrabateninia)
   - [ ] CSS
-    - [ ] CSS Layout (https://learnlayout.com/)
-    - [ ] Better CSS (https://paulcpederson.com/articles/css-for-people-who-hate-css/)
-    - [ ] CSS Cheat Sheet (https://htmlcheatsheet.com/css/)
-    - [ ] CSS Arrows (https://cssarrowplease.com/)
-    - [ ] Pseudo Classes (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index)
-    - [ ] Pseudo Elements (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#list_of_pseudo-elements)
-    - [ ] Dark/Light Themes (https://codepen.io/TheOdinProjectExamples/pen/PojVRMb)
-    - [ ] Table Styling (https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
-    - [ ] Checkbox  Styling (https://moderncss.dev/pure-css-custom-checkbox-style/)
-    - [ ] Selector Practice (https://flukeout.github.io/)
-    - [ ] Flexbox
-      - [ ] Flexbox basics (https://www.samanthaming.com/flexbox30/)
-      - [ ] Flexbox Cheatsheet (img)
-      - [ ] Flexbox Most Common (https://flexbox.malven.co/)
-      - [ ] Complete Guide (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-      - [ ] Flexbox Practice (https://flexboxfroggy.com/)
-    - [ ] Grid
-      - [ ] Grid Most Common (https://grid.malven.co/)
-      - [ ] Grid Cheatsheet (img)
-      - [ ] Complete Guide (https://css-tricks.com/snippets/css/complete-guide-grid/)
-      - [ ] Grid Practice (https://cssgridgarden.com/)
+    - [x] CSS Cheat Sheet (https://htmlcheatsheet.com/css/)
+    - [x] Flexbox Most Common (https://flexbox.malven.co/)
+    - [x] Grid Most Common (https://grid.malven.co/)
+    - [ ] CSS Tricks (https://css-tricks.com/)
+    - [x] CSS Layout (https://learnlayout.com/)
+    - [x] Selector Practice (https://flukeout.github.io/)
+    - [x] Flexbox Practice (https://flexboxfroggy.com/)
+    - [x] Grid Practice (https://cssgridgarden.com/)
   - [ ] Git
     - [ ] Learn Git Branching (https://learngitbranching.js.org/)
   - [ ] Design
@@ -127,7 +115,7 @@ useful way.
     - [ ] Git (https://www.theodinproject.com/lessons/foundations-setting-up-git)
     - [ ] Homebrew (https://docs.brew.sh/Installation#macos-requirements)
     - [ ] Chrome (https://www.google.com/chrome/)
-    - [ ] Firefox  (https://www.mozilla.org/en-US/firefox /mac/)
+    - [ ] Firefox (https://www.mozilla.org/en-US/firefox /mac/)
     - [ ] VS Code (https://code.visualstudio.com/download)
     - [ ] X Code (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
     - [ ] Rectangle (https://rectangleapp.com/)
@@ -151,7 +139,7 @@ useful way.
 ## Lessons & Difficulties
 
 Reading HTML is difficult. I decided to use comments to separate sections
-and make parsing all the tags easier. 
+and make parsing all the tags easier.
 
 ## Diary
 
