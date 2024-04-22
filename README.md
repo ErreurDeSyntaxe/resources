@@ -104,13 +104,13 @@ useful way.
     - [ ] Squoosh (https://squoosh.app/)
     - [ ] MidJourney Prompt Guide (https://www.reddit.com/r/ChatGPT/comments/12v900o/ultimate_chatgpt_prompts_midjourney_library_1200/)
     - [ ] MidJourney Parameters Guide (https://www.reddit.com/r/midjourney/comments/11k09ey/how_to_use_midjourney_advanced_prompts_and/)
-  - [ ] Icons
-    - [ ] Ionic (https://ionic.io/ionicons)
-    - [ ] Feather (https://feathericons.com/)
-    - [ ] Pictogrammers (https://pictogrammers.com/library/mdi/)
-    - [ ] Google (https://fonts.google.com/icons)
-    - [ ] Phosphor (https://phosphoricons.com/)
-    - [ ] Hero (https://heroicons.com/)
+  - [x] Icons
+    - [x] Ionic (https://ionic.io/ionicons)
+    - [x] Feather (https://feathericons.com/)
+    - [x] Pictogrammers (https://pictogrammers.com/library/mdi/)
+    - [x] Google (https://fonts.google.com/icons)
+    - [x] Phosphor (https://phosphoricons.com/)
+    - [x] Hero (https://heroicons.com/)
   - [x] Software
     - [x] Git (https://www.theodinproject.com/lessons/foundations-setting-up-git)
     - [x] Homebrew (https://docs.brew.sh/Installation#macos-requirements)
