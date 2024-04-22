@@ -53,11 +53,11 @@ useful way.
     - [ ] Webpack (https://webpack.js.org/guides/getting-started/)
     - [ ] Building a House (https://www.ayweb.dev/blog/building-a-house-from-the-inside-out)
     - [ ] Zahra (https://github.com/zahrabateninia)
-  - [ ] CSS
+  - [x] CSS
     - [x] CSS Cheat Sheet (https://htmlcheatsheet.com/css/)
     - [x] Flexbox Most Common (https://flexbox.malven.co/)
     - [x] Grid Most Common (https://grid.malven.co/)
-    - [ ] CSS Tricks (https://css-tricks.com/)
+    - [x] CSS Tricks (https://css-tricks.com/)
     - [x] CSS Layout (https://learnlayout.com/)
     - [x] Selector Practice (https://flukeout.github.io/)
     - [x] Flexbox Practice (https://flexboxfroggy.com/)
