@@ -47,6 +47,12 @@ body {
 .page-header-title {
 }
 
+/* RESOURCE STYLING */
+.resource-logo {
+  width: 32px;
+  height: 32px;
+}
+
 /* LINK STYLING */
 .resource-link:link,
 .resource-link:visited {
