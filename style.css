@@ -1,7 +1,8 @@
 /* SPACING SCALE */
+/* 2px 4px 8px 12px 16px 24px 32px 48px 64px 80px 96px 128px */
 
 /* FONT SIZE SCALE */
-/* 61.04px 48.83px 39.06px 31.25px 25px 20px 16px 12.8px */
+/* 12.8px 16px 20px 25px 31.25px 39.06px 48.83px 61.04px */
 
 /* COLOR PALETTE */
 /* 
@@ -47,10 +48,6 @@ body {
 }
 
 /* LINK STYLING */
-/* Added a paragraph around the <a> instead of display:block */
-/* .resource-link {
-  display: block;
-} */
 .resource-link:link,
 .resource-link:visited {
   color: #21209c;
