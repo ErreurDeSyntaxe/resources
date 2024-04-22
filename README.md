@@ -111,16 +111,16 @@ useful way.
     - [ ] Google (https://fonts.google.com/icons)
     - [ ] Phosphor (https://phosphoricons.com/)
     - [ ] Hero (https://heroicons.com/)
-  - [ ] Software
-    - [ ] Git (https://www.theodinproject.com/lessons/foundations-setting-up-git)
-    - [ ] Homebrew (https://docs.brew.sh/Installation#macos-requirements)
-    - [ ] Chrome (https://www.google.com/chrome/)
-    - [ ] Firefox (https://www.mozilla.org/en-US/firefox /mac/)
-    - [ ] VS Code (https://code.visualstudio.com/download)
-    - [ ] X Code (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-    - [ ] Rectangle (https://rectangleapp.com/)
-    - [ ] Alt-Tab (https://alt-tab-macos.netlify.app/)
-    - [ ] Cheat Sheet (https://cheatsheet-mac.en.softonic.com/mac)
+  - [x] Software
+    - [x] Git (https://www.theodinproject.com/lessons/foundations-setting-up-git)
+    - [x] Homebrew (https://docs.brew.sh/Installation#macos-requirements)
+    - [x] Chrome (https://www.google.com/chrome/)
+    - [x] Firefox (https://www.mozilla.org/en-US/firefox/mac/)
+    - [x] VS Code (https://code.visualstudio.com/download)
+    - [x] X Code (https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+    - [x] Rectangle (https://rectangleapp.com/)
+    - [x] Alt-Tab (https://alt-tab-macos.netlify.app/)
+    - [x] Cheat Sheet (https://cheatsheet-mac.en.softonic.com/mac)
 - [x] Filter current "favorites"
 - [ ] Barebone UI
   - [ ] Header
