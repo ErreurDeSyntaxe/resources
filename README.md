@@ -43,16 +43,16 @@ useful way.
   - [x] HTML
     - [x] html entities (https://css-tricks.com/snippets/html/glyphs/)
     - [x] html validator (https://validator.w3.org/#validate_by_input)
-  - [ ] JS
-    - [ ] DOM basics (https://www.javascripttutorial.net/javascript-dom/)
-    - [ ] DOM manipulation (https://youmightnotneedjquery.com/)
-    - [ ] Airbnb JavaScript Guide (https://github.com/airbnb/javascript)
-    - [ ] Idiomatic JavaScript (https://github.com/rwaldron/idiomatic.js)
-    - [ ] Array Methods (img)
-    - [ ] Array Methods Cheat Sheet (https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
-    - [ ] Webpack (https://webpack.js.org/guides/getting-started/)
-    - [ ] Building a House (https://www.ayweb.dev/blog/building-a-house-from-the-inside-out)
-    - [ ] Zahra (https://github.com/zahrabateninia)
+  - [x] JS
+    - [x] DOM basics (https://www.javascripttutorial.net/javascript-dom/)
+    - [x] DOM manipulation (https://youmightnotneedjquery.com/)
+    - [x] Airbnb JavaScript Guide (https://github.com/airbnb/javascript)
+    - [x] Idiomatic JavaScript (https://github.com/rwaldron/idiomatic.js)
+    - [x] Array Methods (img)
+    - [x] Array Methods Cheat Sheet (https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769)
+    - [x] Webpack (https://webpack.js.org/guides/getting-started/)
+    - [x] Building a House (https://www.ayweb.dev/blog/building-a-house-from-the-inside-out)
+    - [x] Zahra (https://github.com/zahrabateninia)
   - [x] CSS
     - [x] CSS Cheat Sheet (https://htmlcheatsheet.com/css/)
     - [x] Flexbox Most Common (https://flexbox.malven.co/)
@@ -62,8 +62,8 @@ useful way.
     - [x] Selector Practice (https://flukeout.github.io/)
     - [x] Flexbox Practice (https://flexboxfroggy.com/)
     - [x] Grid Practice (https://cssgridgarden.com/)
-  - [ ] Git
-    - [ ] Learn Git Branching (https://learngitbranching.js.org/)
+  - [x] Git
+    - [x] Learn Git Branching (https://learngitbranching.js.org/)
   - [ ] Design
     - [ ] Design Aspects (img)
     - [ ] Website Personalities (img)
@@ -136,13 +136,55 @@ useful way.
   - [ ] Testing
   - [ ] Node.js
 
+## Project Definition & Planning
+
+- Who is this for?
+
+  - This website is for myself
+
+- What is this for?
+
+  - This is for practicing CSS skills
+  - This is for accessing resources easily
+  - The tartet audience is myself
+
+- Content?
+
+  - links (done)
+  - icons ()
+  - main color: #36ffd6
+  - secondary color: #28bdd0
+  - gray: #252b33
+
+- Sitemap?
+
+  - Main page
+  - Secondary page (one image slider per design concept)
+  - Starup personality:
+    - light-grey text, medium sans-serif
+    - border-radius, box-shadow
+    - icons
+    - light backgrounds (dark backgrounds too?)
+
+- Sections (drawing on paper)
+
+  - Logo & Name
+  - Hero
+  - Navigation
+  - Resources
+  - Footer
+
 ## Lessons & Difficulties
 
 Reading HTML is difficult. I decided to use comments to separate sections
 and make parsing all the tags easier.
 
+Defining and planning projects deliberately and thouroughly helps.
+
 ## Diary
 
-My bookmarks bar has become too messy. It is no longer useful. It's time
-to clean up, gather better resources, practice development skill, and
-work on a personal project.
+- My bookmarks bar has become too messy. It is no longer useful. It's time
+  to clean up, gather better resources, practice development skill, and
+  work on a personal project.
+
+- After building the Omnifood website, I appreciate more the value of defining the project and planning its components more deliberately. This personal project also needs such an approach.
