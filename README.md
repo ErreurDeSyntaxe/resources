@@ -121,17 +121,16 @@ The goal of the project is to collect useful resources and present them in a use
     - [x] Alt-Tab (https://alt-tab-macos.netlify.app/)
     - [x] Cheat Sheet (https://cheatsheet-mac.en.softonic.com/mac)
 - [x] Filter current "favorites"
-- [ ] Barebone UI
-  - [ ] Header
-  - [ ] Sections
-    - [ ] Resource template
-  - [ ] Sidebar to jump to sections
-  - [ ] Foooter
-  - [ ] Dynamically Populate Page
+- [x] Barebone UI
+  - [x] Header
+  - [x] Sections
+    - [x] Resource template
+  - [x] Sidebar to jump to sections
+  - [x] Foooter
 - [ ] Responsive UI
   - [ ] Mobile first
   - [ ] PC
-- [ ] Add Themes
+- [ ] Add Sections
   - [ ] Testing
   - [ ] Node.js
 
