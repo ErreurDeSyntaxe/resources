@@ -43,25 +43,52 @@
     const slider = accordion.querySelector('.slider-images');
     const imgs = slider.querySelectorAll('img');
     const dots = accordion.querySelector('.slider-dots');
+    const btnLeft = accordion.querySelector('.slider-btn--left');
+    const btnRight = accordion.querySelector('.slider-btn--right');
+    let activeImage = 0;
 
-    // add as many dots as there are images
-    imgs.forEach(() => {
+    imgs.forEach((img, index) => {
+      // add as many dots as there are images
       const dot = document.createElement('div');
       dot.classList.add('slider-dot');
       dot.innerHTML = '&nbsp;';
+      dot.setAttribute('data-index', `${index}`);
       dots.appendChild(dot);
+
+      // hide images to the side for the carousel
+      img.style.transform = `translateX(${index * 100}%)`;
+      img.style.opacity = '0';
+      img.style.transition = 'all 400ms';
     });
+    imgs[activeImage].style.opacity = '1';
     dots.firstElementChild.classList.add('slider-dot-active');
 
-    // add listener to buttons
-    const btnLeft = accordion.querySelector('.slider-btn--left');
-    const btnRight = accordion.querySelector('.slider-btn--right');
+    // image slider (carousel) functionality
+    const darkenDot = function (targetIndex) {
+      console.log(dots.children);
+      console.log(dots);
+      Array.from(dots.children).forEach((dot, index) => {
+        dot.classList.remove('slider-dot-active');
+        if (index === targetIndex) dot.classList.add('slider-dot-active');
+      });
+    };
+    const slideImage = function () {
+      imgs.forEach((img, index) => {
+        img.style.transform = `translateX(${(index - activeImage) * 100}%)`;
+        img.style.opacity = '1';
+      });
+      darkenDot(activeImage);
+    };
 
     btnLeft.addEventListener('click', () => {
-      console.log('go left!');
+      activeImage--;
+      if (activeImage < 0) activeImage = imgs.length - 1;
+      slideImage();
     });
     btnRight.addEventListener('click', () => {
-      console.log('go right!');
+      activeImage++;
+      if (activeImage >= imgs.length) activeImage = 0;
+      slideImage();
     });
   });
 })();

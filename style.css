@@ -241,6 +241,9 @@ body {
   height: 3.2rem;
 }
 .slider-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
 }
 .slider-img {
   max-width: 100%;
@@ -248,7 +251,9 @@ body {
   margin: 0 auto;
   border-radius: 9px;
 
-  display: none;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  /* display: none; */
 }
 .slider--active {
   display: block;
