@@ -14,7 +14,8 @@
  *
  */
 (function activateAccordionButton() {
-  const buttons = Array.from(document.querySelectorAll('.accordion-button'));
+  // Make the whole header have the drop down & pull up functionality
+  const buttons = Array.from(document.querySelectorAll('.accordion-header'));
   const icons = Array.from(document.querySelectorAll('.accordion-icon'));
   const contents = Array.from(document.querySelectorAll('.accordion-content'));
 
@@ -42,7 +43,7 @@
   accordions.forEach((accordion) => {
     const slider = accordion.querySelector('.slider-images');
     const imgs = slider.querySelectorAll('img');
-    const dots = accordion.querySelector('.slider-dots');
+    const dotsContainer = accordion.querySelector('.slider-dots');
     const btnLeft = accordion.querySelector('.slider-btn--left');
     const btnRight = accordion.querySelector('.slider-btn--right');
     let activeImage = 0;
@@ -53,7 +54,7 @@
       dot.classList.add('slider-dot');
       dot.innerHTML = '&nbsp;';
       dot.setAttribute('data-index', `${index}`);
-      dots.appendChild(dot);
+      dotsContainer.appendChild(dot);
 
       // hide images to the side for the carousel
       img.style.transform = `translateX(${index * 100}%)`;
@@ -61,13 +62,11 @@
       img.style.transition = 'all 400ms';
     });
     imgs[activeImage].style.opacity = '1';
-    dots.firstElementChild.classList.add('slider-dot-active');
+    dotsContainer.firstElementChild.classList.add('slider-dot-active');
 
     // image slider (carousel) functionality
     const darkenDot = function (targetIndex) {
-      console.log(dots.children);
-      console.log(dots);
-      Array.from(dots.children).forEach((dot, index) => {
+      Array.from(dotsContainer.children).forEach((dot, index) => {
         dot.classList.remove('slider-dot-active');
         if (index === targetIndex) dot.classList.add('slider-dot-active');
       });
@@ -80,6 +79,7 @@
       darkenDot(activeImage);
     };
 
+    // slide images left or right
     btnLeft.addEventListener('click', () => {
       activeImage--;
       if (activeImage < 0) activeImage = imgs.length - 1;
@@ -88,6 +88,11 @@
     btnRight.addEventListener('click', () => {
       activeImage++;
       if (activeImage >= imgs.length) activeImage = 0;
+      slideImage();
+    });
+    // slide to a target image through the dots
+    dotsContainer.addEventListener('click', (e) => {
+      activeImage = e.target.dataset.index;
       slideImage();
     });
   });

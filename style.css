@@ -176,6 +176,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  cursor: pointer;
 }
 .accordion-number {
   font-size: 3.2rem;
