@@ -37,16 +37,31 @@
  *
  */
 (function activateSliderButtons() {
-  const slider = document.querySelector('.slider-implementation');
-  const dots = document.querySelector('.dots-implementation');
+  const accordions = document.querySelectorAll('.accordion');
 
-  // add dots
-  console.log(slider.children);
-  Array.from(slider.children).forEach(() => {
-    const dot = document.createElement('div');
-    dot.classList.add('slider-dot');
-    dot.innerHTML = '&nbsp;';
-    dots.appendChild(dot);
+  accordions.forEach((accordion) => {
+    const slider = accordion.querySelector('.slider-images');
+    const imgs = slider.querySelectorAll('img');
+    const dots = accordion.querySelector('.slider-dots');
+
+    // add as many dots as there are images
+    imgs.forEach(() => {
+      const dot = document.createElement('div');
+      dot.classList.add('slider-dot');
+      dot.innerHTML = '&nbsp;';
+      dots.appendChild(dot);
+    });
+    dots.firstElementChild.classList.add('slider-dot-active');
+
+    // add listener to buttons
+    const btnLeft = accordion.querySelector('.slider-btn--left');
+    const btnRight = accordion.querySelector('.slider-btn--right');
+
+    btnLeft.addEventListener('click', () => {
+      console.log('go left!');
+    });
+    btnRight.addEventListener('click', () => {
+      console.log('go right!');
+    });
   });
-  dots.firstChild.classList.add('slider-dot-active');
 })();
