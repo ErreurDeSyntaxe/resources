@@ -56,6 +56,9 @@
   .section-header-text {
     font-size: 3rem;
   }
+  .accordion-title {
+    font-size: 2.4rem;
+  }
 }
 
 /* BELOW 352PX */
@@ -91,5 +94,8 @@
   }
   .resource-description {
     font-size: 1.4rem;
+  }
+  .accordion-title {
+    font-size: 2rem;
   }
 }
