@@ -1,13 +1,5 @@
 'use strict';
 
-// console.log('Hello, World!');
-// const body = document.querySelector('body');
-// const smallIcon = document.createElement('img');
-
-// smallIcon.src = './img/odin-logo.svg';
-
-// body.appendChild(smallIcon);
-
 /*
  *
  * Accordion Buttons: Drop down (& put away) the image carousel
@@ -49,6 +41,11 @@
     let activeImage = 0;
 
     imgs.forEach((img, index) => {
+      // remove the left/right arrow button if only one image
+      if (imgs.length === 1) {
+        btnLeft.remove();
+        btnRight.remove();
+      }
       // add as many dots as there are images
       const dot = document.createElement('div');
       dot.classList.add('slider-dot');
