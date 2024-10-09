@@ -12,7 +12,7 @@ A reference page with resources used in the design and development of web pages.
 
 ### Live
 
-<a href='https://erreurdesyntaxe.github.io/resources/'>Google</a>
+<a href='https://erreurdesyntaxe.github.io/resources/'>Erreur De Syntaxe's Resources</a>
 
 ### Objective
 
