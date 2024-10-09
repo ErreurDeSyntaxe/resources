@@ -165,11 +165,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5.2rem;
+  align-items: center;
 }
 .accordion {
   border-radius: 9px;
   box-shadow: 0 0 1rem 0 #36ffd6;
   overflow: hidden;
+  width: 50%;
+
+  transition: all 400ms;
+}
+.accordion--deployed {
+  width: 80%;
 }
 .accordion-header {
   display: flex;

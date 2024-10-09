@@ -11,6 +11,7 @@
   const icons = Array.from(document.querySelectorAll('.accordion-icon'));
   const contents = Array.from(document.querySelectorAll('.accordion-content'));
 
+  // add listeners to each button. not the best.
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', () => {
       if (icons[i].classList.contains('rotated'))
@@ -18,8 +19,9 @@
       else {
         icons[i].style.transform = 'rotate(180deg)';
       }
-      icons[i].classList.toggle('rotated');
-      contents[i].classList.toggle('accordion--active');
+      icons[i].classList.toggle('rotated'); // rotates the chevron icon
+      contents[i].classList.toggle('accordion--active'); // displays/hides the imgs
+      buttons[i].closest('.accordion').classList.toggle('accordion--deployed'); // enlarges/shrinks the imgs
     });
   }
 })();
