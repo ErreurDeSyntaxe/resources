@@ -4,7 +4,7 @@ A reference page with resources used in the design and development of web pages.
 
 ## About the Project
 
-<!-- ### Preview
+### Preview
 
 <div align='center'>
     <img src='./README/project-preview.png'>
@@ -12,28 +12,27 @@ A reference page with resources used in the design and development of web pages.
 
 ### Live
 
-<a href='http://google.com/'>Google</a> -->
+<a href='https://erreurdesyntaxe.github.io/resources/'>Google</a>
 
 ### Objective
 
 The goal of the project is to collect useful resources and present them in a useful way.
 
-### Features
+### Notable Features
 
-- Web development resources
-- Web design resources
-<!-- - Add something
-- Edit something
-- Remove something
-- Allow users to complicate dev's job -->
+- Image Slider
+- Icons
+- Short Description
 
-## Built With
+### Built With
 
 <img src='./README/html5-logo.svg' style='width:40px; height: 40px' >
 <img src='./README/css3-logo.svg' style='width:40px; height: 40px' >
-<!-- <img src='./README/javascript-logo.svg' style='width:40px; height: 40px' > -->
+<img src='./README/javascript-logo.svg' style='width:40px; height: 40px' >
 
-## To-Do
+## Development
+
+### To Do
 
 - [x] Understand Objectives
 - [x] Write Plan
