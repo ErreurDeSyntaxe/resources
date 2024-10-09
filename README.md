@@ -171,14 +171,18 @@ The goal of the project is to collect useful resources and present them in a use
   - Resources
   - Footer
 
-## Lessons & Difficulties
+## Reflection
+
+### Lessons & Difficulties
 
 Reading HTML is difficult. I decided to use comments to separate sections and make parsing all the tags easier
 
 Defining and planning projects deliberately and thouroughly helps.
 
-## Diary
+### Diary
 
 - My bookmarks bar has become too messy. It is no longer useful. It's time to clean up, gather better resources, practice development skill, and work on a personal project.
 
 - After building the Omnifood website, I appreciate more the value of defining the project and planning its components more deliberately. This personal project also needs such an approach.
+
+- Coming back to this project to improve some aspects, I realize that the code is very declarative in nature. It would be well to refactor the code into something more functional, but there are more important things to do.
