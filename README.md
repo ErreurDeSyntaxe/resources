@@ -37,7 +37,7 @@ The goal of the project is to collect useful resources and present them in a use
 - [x] Understand Objectives
 - [x] Write Plan
 - [x] List Themes & Resources
-- [ ] Build Markup
+- [x] Build Markup
   - [x] HTML
     - [x] html entities (https://css-tricks.com/snippets/html/glyphs/)
     - [x] html validator (https://validator.w3.org/#validate_by_input)
@@ -63,19 +63,19 @@ The goal of the project is to collect useful resources and present them in a use
   - [x] Git
     - [x] Learn Git Branching (https://learngitbranching.js.org/)
   - [ ] Design
-    - [ ] Design Aspects (img)
-    - [ ] Website Personalities (img)
-    - [ ] Font Rules (img)
-    - [ ] Colors Meaning (img)
-    - [ ] Colors Rules (img)
-    - [ ] Images Rules (img)
-    - [ ] Icons (img)
-    - [ ] Shadows (img)
-    - [ ] Border-Radius (img)
-    - [ ] Whitespace (img)
-    - [ ] Visual Hierarchy (img)
-    - [ ] UX (img)
-    - [ ] Components & Layout (img)
+    - [x] Design Aspects (img)
+    - [x] Website Personalities (img)
+    - [x] Font Rules (img)
+    - [x] Colors Meaning (img)
+    - [x] Colors Rules (img)
+    - [x] Images Rules (img)
+    - [x] Icons (img)
+    - [x] Shadows (img)
+    - [x] Border-Radius (img)
+    - [x] Whitespace (img)
+    - [x] Visual Hierarchy (img)
+    - [x] UX (img)
+    - [x] Components & Layout (img)
     - [ ] Landbook (https://land-book.com/)
     - [ ] One Page Love (https://onepagelove.com/inspiration)
   - [x] Fonts
@@ -126,9 +126,7 @@ The goal of the project is to collect useful resources and present them in a use
     - [x] Resource template
   - [x] Sidebar to jump to sections
   - [x] Foooter
-- [ ] Responsive UI
-  - [ ] Mobile first
-  - [ ] PC
+- [x] Responsive UI
 - [ ] Add Sections
   - [ ] Testing
   - [ ] Node.js
@@ -186,3 +184,5 @@ Defining and planning projects deliberately and thouroughly helps.
 - After building the Omnifood website, I appreciate more the value of defining the project and planning its components more deliberately. This personal project also needs such an approach.
 
 - Coming back to this project to improve some aspects, I realize that the code is very declarative in nature. It would be well to refactor the code into something more functional, but there are more important things to do.
+
+- I also know it would have been much nicer to have JS generate the html, but it would entice long hours of menial work for little gain.
