@@ -1,9 +1,67 @@
 'use strict';
 
-/*
- *
+const resourcesHTML = [
+  {
+    img: {
+      src: './src/img/logos/w3c.ico',
+      alt: 'W3C logo',
+    },
+    link: {
+      ref: 'https://validator.w3.org/#validate_by_input',
+      text: 'Validator',
+      desc: 'HTML Tool to Spot Mistakes',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/css-tricks.svg',
+      alt: 'CSS Tricks logo',
+    },
+    link: {
+      ref: 'https://css-tricks.com/snippets/html/glyphs/',
+      text: 'HTML Entities',
+      desc: 'Special Characters List',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/CANiUSE.png',
+      alt: 'Can I Use logo',
+    },
+    link: {
+      ref: 'https://caniuse.com/',
+      text: 'Can I Use?',
+      desc: 'Browser Compatibility Chart',
+    },
+  },
+];
+(function populate() {
+  const containerHTML = document.querySelector('.resource-html');
+  const markup = resourcesHTML.reduce(
+    (accu, curr) =>
+      (accu += `
+      <div class="resource">
+        <img
+          src="${curr.img.src}"
+          alt="${curr.img.alt}"
+          class="resource-logo"
+        />
+        <p>
+          <a
+            href="${curr.link.ref}"
+            class="resource-link"
+            >${curr.link.text}</a
+          >
+        </p>
+        <p class="resource-description">${curr.link.desc}</p>
+      </div>`),
+    ''
+  );
+  containerHTML.insertAdjacentHTML('beforeend', markup);
+})();
+
+/**
  * Accordion Buttons: Drop down (& put away) the image carousel
- *
  */
 (function activateAccordionButton() {
   // Make the whole header have the drop down & pull up functionality
@@ -26,10 +84,8 @@
   }
 })();
 
-/*
- *
+/**
  * Carousel Buttons: Slide images & reflect changes on bottom dots
- *
  */
 (function activateSliderButtons() {
   const accordions = document.querySelectorAll('.accordion');
