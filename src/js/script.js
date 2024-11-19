@@ -216,6 +216,63 @@ const resourcesJS = [
     },
   },
 ];
+const resourcesFonts = [
+  {
+    img: {
+      src: './src/img/logos/google-fonts.svg',
+      alt: 'JavaScript Tutorial logo',
+    },
+    link: {
+      ref: 'https://fonts.google.com/',
+      text: 'Google Fonts',
+      desc: 'Font Library',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/squirrel.png',
+      alt: 'Font Squirrel logo',
+    },
+    link: {
+      ref: 'https://fonts.google.com/',
+      text: 'Font Squirrel',
+      desc: 'Font Library',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/creative.svg',
+      alt: 'Creative Blog logo',
+    },
+    link: {
+      ref: 'https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380',
+      text: 'Top 100',
+      desc: 'Best Free Fonts Article',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/typescale.svg',
+      alt: 'Type Scale logo',
+    },
+    link: {
+      ref: 'https://typescale.com/',
+      text: 'Type Scale',
+      desc: 'Font Size Scaling Tool',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/word-counter.ico',
+      alt: 'Word Counter logo',
+    },
+    link: {
+      ref: 'https://wordcounter.net/character-count',
+      text: '75 Characters Per Line',
+      desc: 'Character Counter',
+    },
+  },
+];
 
 /**
  * Dynamically populate the DOM
@@ -249,6 +306,7 @@ const populate = function (arr, section) {
 populate(resourcesHTML, 'html');
 populate(resourcesCSS, 'css');
 populate(resourcesJS, 'js');
+populate(resourcesFonts, 'fonts');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
