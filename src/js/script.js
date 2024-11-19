@@ -1,5 +1,6 @@
 'use strict';
 
+// Arrays of resources with img and url info
 const resourcesHTML = [
   {
     img: {
@@ -35,9 +36,195 @@ const resourcesHTML = [
     },
   },
 ];
-(function populate() {
-  const containerHTML = document.querySelector('.resource-html');
-  const markup = resourcesHTML.reduce(
+const resourcesCSS = [
+  {
+    img: {
+      src: './src/img/logos/css-cheatsheet.png',
+      alt: 'CSS Cheatsheet logo',
+    },
+    link: {
+      ref: 'https://htmlcheatsheet.com/css/',
+      text: 'CSS Cheat Sheet',
+      desc: 'CSS Generator',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/css-tricks.svg',
+      alt: 'CSS Tricks logo',
+    },
+    link: {
+      ref: 'https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture',
+      text: 'Responsive Images CSS',
+      desc: 'Responsive Image Code',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/flex-malven.png',
+      alt: "Malven's Flexbox logo",
+    },
+    link: {
+      ref: 'https://flexbox.malven.co/',
+      text: 'Flexbox',
+      desc: 'Cheat Sheet',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/grid-malven.png',
+      alt: "Malven's Grid logo",
+    },
+    link: {
+      ref: 'https://grid.malven.co/',
+      text: 'CSS Grid',
+      desc: 'Cheat Sheet',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/CSSdiner.png',
+      alt: 'CSS Diner logo',
+    },
+    link: {
+      ref: 'https://flukeout.github.io/',
+      text: 'Selectors',
+      desc: 'Gamified Selector Practice',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/frog-green.svg',
+      alt: 'Flexbox Froggy logo',
+    },
+    link: {
+      ref: 'https://flexboxfroggy.com/',
+      text: 'Flex Froggy',
+      desc: 'Gamified Flexbox Practice',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/carrots.svg',
+      alt: 'CSS Grid Garden logo',
+    },
+    link: {
+      ref: 'https://cssgridgarden.com/',
+      text: 'Grid Garden',
+      desc: 'Gamified Grid Practice',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/css-tricks.svg',
+      alt: 'CSS Tricks logo',
+    },
+    link: {
+      ref: 'https://css-tricks.com/',
+      text: 'CSS Tricks',
+      desc: 'Overall CSS Masters',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/css-layout.png',
+      alt: 'CSS Layout logo',
+    },
+    link: {
+      ref: 'https://learnlayout.com/',
+      text: 'float: right or wrong?',
+      desc: 'Stone Age Layout',
+    },
+  },
+];
+const resourcesJS = [
+  {
+    img: {
+      src: './src/img/logos/jstutorial.png',
+      alt: 'JavaScript Tutorial logo',
+    },
+    link: {
+      ref: 'https://www.javascripttutorial.net/javascript-dom/',
+      text: 'DOM Manipulation',
+      desc: 'A JavaScript Tutorial',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/jquery.ico',
+      alt: 'jQuert logo',
+    },
+    link: {
+      ref: 'https://youmightnotneedjquery.com/',
+      text: 'You Might Not Need jQuery',
+      desc: 'A list of ways to avoid jQuery',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/github.svg',
+      alt: 'GitHub logo',
+    },
+    link: {
+      ref: 'https://github.com/airbnb/javascript',
+      text: 'Air BnB',
+      desc: 'A Respected JavaScript Guide',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/github.svg',
+      alt: 'GitHub logo',
+    },
+    link: {
+      ref: 'https://github.com/rwaldron/idiomatic.js',
+      text: 'Idiomatic JS',
+      desc: 'Another JavaScript Guide',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/dev-logo.png',
+      alt: 'DEV logo',
+    },
+    link: {
+      ref: 'https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769',
+      text: 'Array Methods',
+      desc: 'Array Methods Cheat Sheet',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/webpack.ico',
+      alt: 'Webpack logo',
+    },
+    link: {
+      ref: 'https://webpack.js.org/guides/getting-started/',
+      text: 'Webpack',
+      desc: 'A Guide on Pulling Your Own Teeth',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/build-outline.svg',
+      alt: 'Wrench logo',
+    },
+    link: {
+      ref: 'https://www.ayweb.dev/blog/building-a-house-from-the-inside-out',
+      text: 'Building a House',
+      desc: 'A Guide on Approchaing Problem Solving',
+    },
+  },
+];
+
+/**
+ * Dynamically populate the DOM
+ * @param {Array} arr Objects containing resource info (img src, img alt, href)
+ * @param {String} section Identifier of target div
+ */
+const populate = function (arr, section) {
+  const container = document.querySelector(`.resource-${section}`);
+  const markup = arr.reduce(
     (accu, curr) =>
       (accu += `
       <div class="resource">
@@ -57,8 +244,11 @@ const resourcesHTML = [
       </div>`),
     ''
   );
-  containerHTML.insertAdjacentHTML('beforeend', markup);
-})();
+  container.insertAdjacentHTML('beforeend', markup);
+};
+populate(resourcesHTML, 'html');
+populate(resourcesCSS, 'css');
+populate(resourcesJS, 'js');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
