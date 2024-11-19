@@ -273,6 +273,63 @@ const resourcesFonts = [
     },
   },
 ];
+const resourcesColors = [
+  {
+    img: {
+      src: './src/img/logos/open-colors.ico',
+      alt: 'Open Colors logo',
+    },
+    link: {
+      ref: 'https://fonts.google.com/',
+      text: 'Open Colors',
+      desc: 'Open Source Color Scheme',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/tailwind.png',
+      alt: 'Tailwind logo',
+    },
+    link: {
+      ref: 'https://tailwindcss.com/docs/customizing-colors',
+      text: 'Tailwind',
+      desc: 'Tailwind Color Scheme',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/color-hunt.svg',
+      alt: 'Color Hunt logo',
+    },
+    link: {
+      ref: 'https://www.colorhunt.co/',
+      text: 'Color Hunt',
+      desc: 'Color Palette Tool',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/tintsAndShades.png',
+      alt: 'Tints and Shades logo',
+    },
+    link: {
+      ref: 'https://maketintsandshades.com/',
+      text: 'Make Tints & Shades',
+      desc: 'Tints & Shades Tool',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/coolors.png',
+      alt: 'Coolors logo',
+    },
+    link: {
+      ref: 'https://coolors.co/',
+      text: 'Coolors',
+      desc: 'Swiss Army Knife of Colors',
+    },
+  },
+];
 
 /**
  * Dynamically populate the DOM
@@ -307,6 +364,7 @@ populate(resourcesHTML, 'html');
 populate(resourcesCSS, 'css');
 populate(resourcesJS, 'js');
 populate(resourcesFonts, 'fonts');
+populate(resourcesColors, 'colors');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
