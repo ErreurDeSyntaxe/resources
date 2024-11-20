@@ -398,6 +398,118 @@ const resourcesIcons = [
     },
   },
 ];
+const resourcesImages = [
+  {
+    img: {
+      src: './src/img/logos/unsplash.svg',
+      alt: 'Unsplash logo',
+    },
+    link: {
+      ref: 'https://unsplash.com/',
+      text: 'Unsplash',
+      desc: 'Royalty-Free Images',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/pexels.ico',
+      alt: 'Pexels logo',
+    },
+    link: {
+      ref: 'https://pexels.com/',
+      text: 'Pexels',
+      desc: 'Royalty-Free Images',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/pixabay.png',
+      alt: 'Pixabay logo',
+    },
+    link: {
+      ref: 'https://pixabay.com/',
+      text: 'Pixabay',
+      desc: 'Royalty-Free Images',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/undraw.png',
+      alt: 'Undraw logo',
+    },
+    link: {
+      ref: 'https://undraw.co/illustrations/',
+      text: 'Undraw',
+      desc: 'Royalty-Free Images',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/uifaces.png',
+      alt: 'UI Faces logo',
+    },
+    link: {
+      ref: 'https://uifaces.co/',
+      text: 'UI Faces',
+      desc: 'AI-Generated Profiles',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/userGenerator.png',
+      alt: 'User Generator logo',
+    },
+    link: {
+      ref: 'https://randomuser.me/',
+      text: 'Random User',
+      desc: 'User Generator',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/coverr.png',
+      alt: 'Coverr logo',
+    },
+    link: {
+      ref: 'https://coverr.co/',
+      text: 'Coverr',
+      desc: 'Royalty-Free Videos',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/drawkit.png',
+      alt: 'Draw Kit logo',
+    },
+    link: {
+      ref: 'https://drawkit.com/',
+      text: 'Draw Kit',
+      desc: 'Royalty-Free Illustrations',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/squoosh.ico',
+      alt: 'Squoosh logo',
+    },
+    link: {
+      ref: 'https://squoosh.app/',
+      text: 'Squoosh',
+      desc: 'Image Compressor',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/photoroom.png',
+      alt: 'Photoroom logo',
+    },
+    link: {
+      ref: 'https://photoroom.com/tools/background-remover/',
+      text: 'Photoroom',
+      desc: 'Background Remover',
+    },
+  },
+];
 
 /**
  * Dynamically populate the DOM
@@ -434,6 +546,7 @@ populate(resourcesJS, 'js');
 populate(resourcesFonts, 'fonts');
 populate(resourcesColors, 'colors');
 populate(resourcesIcons, 'icons');
+populate(resourcesImages, 'images');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
