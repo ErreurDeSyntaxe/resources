@@ -1,9 +1,65 @@
 'use strict';
 
+// Array with section names
+const designSections = [
+  'Design Fundamentals',
+  'Typography',
+  'Colors',
+  'Images',
+  'Icons',
+  'Box Shadow',
+  'Border Radius',
+  'Whitespace',
+  'Visual Hierarchy',
+  'User Experience',
+  'Components',
+];
+
+const buildSections = function (sections) {
+  const container = document.querySelector('.accordions');
+  // const markup = sections.reduce(() => 'help');
+  const markup = sections.reduce(
+    (accu, curr, index) =>
+      (accu += `
+        <div class="accordion">
+          <div class="accordion-header">
+            <span class="accordion-number">${index + 1}</span>
+            <span class="accordion-title">${curr}</span>
+            <div class="accordion-button">
+              <ion-icon
+                name="chevron-down-outline"
+                class="accordion-icon"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <button class="slider-btn slider-btn--left">
+              <ion-icon
+                name="chevron-back-circle-outline"
+                class="slider-btn-icon btn-icon-left"
+              ></ion-icon>
+            </button>
+            <button class="slider-btn slider-btn--right">
+              <ion-icon
+                name="arrow-forward-circle-outline"
+                class="slider-btn-icon btn-icon-right"
+              ></ion-icon>
+            </button>
+            <div class="slider-images design-${curr}"></div>
+            <div class="slider-dots"></div>
+          </div>
+        </div>`),
+    ''
+  );
+  container.insertAdjacentHTML('afterbegin', markup);
+};
+buildSections(designSections);
+
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
  */
-(function activateAccordionButton() {
+const activateAccordionButton = function () {
   // Make the whole header have the drop down & pull up functionality
   const buttons = Array.from(document.querySelectorAll('.accordion-header'));
   const icons = Array.from(document.querySelectorAll('.accordion-icon'));
@@ -22,12 +78,13 @@
       buttons[i].closest('.accordion').classList.toggle('accordion--deployed'); // enlarges/shrinks the imgs
     });
   }
-})();
+};
+// activateAccordionButton();
 
 /**
  * Carousel Buttons: Slide images & reflect changes on bottom dots
  */
-(function activateSliderButtons() {
+const activateSliderButtons = function () {
   const accordions = document.querySelectorAll('.accordion');
 
   accordions.forEach((accordion) => {
@@ -91,4 +148,5 @@
       slideImage();
     });
   });
-})();
+};
+// activateSliderButtons();
