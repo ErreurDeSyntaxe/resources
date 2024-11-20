@@ -330,6 +330,74 @@ const resourcesColors = [
     },
   },
 ];
+const resourcesIcons = [
+  {
+    img: {
+      src: './src/img/logos/ionicons.png',
+      alt: 'Ion Icons logo',
+    },
+    link: {
+      ref: 'https://ionic.io/ionicons',
+      text: 'Ion',
+      desc: 'Open Source Icon Set',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/feathers.svg',
+      alt: 'Feathers Icons logo',
+    },
+    link: {
+      ref: 'https://feathericons.com/',
+      text: 'Feathers',
+      desc: 'Customizable Icon Set',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/pictogrammers.svg',
+      alt: 'Pictogrammers Icons logo',
+    },
+    link: {
+      ref: 'https://pictogrammers.com/library/mdi/',
+      text: 'Pictogrammers',
+      desc: 'Extensive Icon Set',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/google-fonts.svg',
+      alt: 'Google Fonts logo',
+    },
+    link: {
+      ref: 'https://pictogrammers.com/library/mdi/',
+      text: 'Google',
+      desc: 'Extensive Icon Set',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/phosphor.png',
+      alt: 'Phosphor Icons logo',
+    },
+    link: {
+      ref: 'https://phosphoricons.com/',
+      text: 'Phosphor',
+      desc: 'Customizable Icon Set',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/heroicons.png',
+      alt: 'Hero Icons logo',
+    },
+    link: {
+      ref: 'https://heroicons.com/',
+      text: 'Hero',
+      desc: 'Simple Icon Set',
+    },
+  },
+];
 
 /**
  * Dynamically populate the DOM
@@ -365,6 +433,7 @@ populate(resourcesCSS, 'css');
 populate(resourcesJS, 'js');
 populate(resourcesFonts, 'fonts');
 populate(resourcesColors, 'colors');
+populate(resourcesIcons, 'icons');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
