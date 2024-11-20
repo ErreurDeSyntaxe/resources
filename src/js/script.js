@@ -510,6 +510,120 @@ const resourcesImages = [
     },
   },
 ];
+const resourcesGit = [
+  {
+    img: {
+      src: './src/img/logos/learnGit.ico',
+      alt: 'Learn Git logo',
+    },
+    link: {
+      ref: 'https://learngitbranching.js.org/',
+      text: 'Learn Git Branching',
+      desc: 'Branching Practice Website',
+    },
+  },
+];
+const resourcesSoftware = [
+  {
+    img: {
+      src: './src/img/logos/odin.svg',
+      alt: 'The Odin Project logo',
+    },
+    link: {
+      ref: 'https://www.theodinproject.com/lessons/foundations-setting-up-git/',
+      text: 'Git Setup',
+      desc: 'Git Setup Guide',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/homebrew.ico',
+      alt: 'Homebrew logo',
+    },
+    link: {
+      ref: 'https://docs.brew.sh/Installation#macos-requirements/',
+      text: 'Git Setup',
+      desc: 'Git Setup Guide',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/google.png',
+      alt: 'Homebrew logo',
+    },
+    link: {
+      ref: 'https://www.google.com/chrome/',
+      text: 'Google Chrome',
+      desc: 'Most Popular Browser',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/firefox.png',
+      alt: 'Homebrew logo',
+    },
+    link: {
+      ref: 'https://www.mozilla.org/en-US/firefox/mac/',
+      text: 'Mozilla Firefox',
+      desc: 'Has-Been Browser',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/vscode.ico',
+      alt: 'VS Code logo',
+    },
+    link: {
+      ref: 'https://code.visualstudio.com/download/',
+      text: 'VS Code',
+      desc: 'Most Popular IDE',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/Xcode.jpg',
+      alt: 'X Code logo',
+    },
+    link: {
+      ref: 'https://apps.apple.com/us/app/xcode/id497799835?mt=12/',
+      text: 'VS Code',
+      desc: 'Most Popular IDE',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/rectangle.png',
+      alt: 'Rectangle logo',
+    },
+    link: {
+      ref: 'https://rectangleapp.com/',
+      text: 'Rectangle',
+      desc: 'Window Management App',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/alt-tab.png',
+      alt: 'Atl-Tab logo',
+    },
+    link: {
+      ref: 'https://alt-tab-macos.netlify.app/',
+      text: 'Alt-Tab',
+      desc: 'Window Management App',
+    },
+  },
+  {
+    img: {
+      src: './src/img/logos/cheatsheet.png',
+      alt: 'Cheat Sheet logo',
+    },
+    link: {
+      ref: 'https://cheatsheet-mac.en.softonic.com/mac/',
+      text: 'Cheat Sheet',
+      desc: 'Shortcut Tool App',
+    },
+  },
+];
 
 /**
  * Dynamically populate the DOM
@@ -547,6 +661,8 @@ populate(resourcesFonts, 'fonts');
 populate(resourcesColors, 'colors');
 populate(resourcesIcons, 'icons');
 populate(resourcesImages, 'images');
+populate(resourcesGit, 'git');
+populate(resourcesSoftware, 'software');
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
