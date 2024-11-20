@@ -2,59 +2,155 @@
 
 // Array with section names
 const designSections = [
-  'Design Fundamentals',
-  'Typography',
-  'Colors',
-  'Images',
-  'Icons',
-  'Box Shadow',
-  'Border Radius',
-  'Whitespace',
-  'Visual Hierarchy',
-  'User Experience',
-  'Components',
+  {
+    section: 'Design Fundamentals',
+    imgSrc: './src/img/design/aspects/aspectsRule',
+    imgAlt: 'Font rules for good web design',
+    imgCount: 1,
+  },
+  {
+    section: 'Typography',
+    imgSrc: './src/img/design/font/fontRule',
+    imgAlt: 'XYZ rules for good web design',
+    imgCount: 10,
+  },
+  {
+    section: 'Colors',
+    imgSrc: './src/img/design/colors/colorsRule',
+    imgAlt: 'Color rules for good web design',
+    imgCount: 6,
+  },
+  {
+    section: 'Images',
+    imgSrc: './src/img/design/images/imagesRule',
+    imgAlt: 'Image rules for good web design',
+    imgCount: 11,
+  },
+  {
+    section: 'Icons',
+    imgSrc: './src/img/design/icons/iconsRule',
+    imgAlt: 'Icon rules for good web design',
+    imgCount: 8,
+  },
+  {
+    section: 'Box Shadow',
+    imgSrc: './src/img/design/shadows/shadowsRule',
+    imgAlt: 'Box Shadow rules for good web design',
+    imgCount: 7,
+  },
+  {
+    section: 'Border Radius',
+    imgSrc: './src/img/design/radius/radiusRule',
+    imgAlt: 'Border Radius rules for good web design',
+    imgCount: 3,
+  },
+  {
+    section: 'Whitespace',
+    imgSrc: './src/img/design/whitespace/whitespaceRule',
+    imgAlt: 'Whitespace rules for good web design',
+    imgCount: 9,
+  },
+  {
+    section: 'Visual Hierarchy',
+    imgSrc: './src/img/design/hierarchy/hierarchyRule',
+    imgAlt: 'Visual Hierarchy rules for good web design',
+    imgCount: 15,
+  },
+  {
+    section: 'User Experience',
+    imgSrc: './src/img/design/UX/uxRule',
+    imgAlt: 'User Experience rules for good web design',
+    imgCount: 13,
+  },
+  {
+    section: 'Components',
+    imgSrc: './src/img/design/component/componentsRule',
+    imgAlt: 'Component rules for good web design',
+    imgCount: 8,
+  },
+  {
+    section: 'Personality',
+    imgSrc: './src/img/design/personalities/personalitiesRule',
+    imgAlt: 'Personallity rules for good web design',
+    imgCount: 16,
+  },
 ];
 
+/**
+ * Build DOM dynamically
+ * @param {Array} sections List of section names
+ */
 const buildSections = function (sections) {
   const container = document.querySelector('.accordions');
-  // const markup = sections.reduce(() => 'help');
-  const markup = sections.reduce(
-    (accu, curr, index) =>
-      (accu += `
-        <div class="accordion">
-          <div class="accordion-header">
-            <span class="accordion-number">${index + 1}</span>
-            <span class="accordion-title">${curr}</span>
-            <div class="accordion-button">
-              <ion-icon
-                name="chevron-down-outline"
-                class="accordion-icon"
-              ></ion-icon>
-            </div>
+  const markup = sections.reduce((accu, curr, index) => {
+    accu += `
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="accordion-number">${index}</span>
+          <span class="accordion-title">${curr.section}</span>
+          <div class="accordion-button">
+            <ion-icon
+              name="chevron-down-outline"
+              class="accordion-icon"
+            ></ion-icon>
           </div>
+        </div>
 
-          <div class="accordion-content">
-            <button class="slider-btn slider-btn--left">
-              <ion-icon
-                name="chevron-back-circle-outline"
-                class="slider-btn-icon btn-icon-left"
-              ></ion-icon>
-            </button>
-            <button class="slider-btn slider-btn--right">
-              <ion-icon
-                name="arrow-forward-circle-outline"
-                class="slider-btn-icon btn-icon-right"
-              ></ion-icon>
-            </button>
-            <div class="slider-images design-${curr}"></div>
-            <div class="slider-dots"></div>
+        <div class="accordion-content">
+          <button class="slider-btn slider-btn--left">
+            <ion-icon
+              name="chevron-back-circle-outline"
+              class="slider-btn-icon btn-icon-left"
+            ></ion-icon>
+          </button>
+          <button class="slider-btn slider-btn--right">
+            <ion-icon
+              name="arrow-forward-circle-outline"
+              class="slider-btn-icon btn-icon-right"
+            ></ion-icon>
+          </button>
+          <div class="slider-images design-${curr.section
+            .toLowerCase()
+            .replace(' ', '-')}">
+            <img
+              src="./src/img/design/font/fontRule1.jpg"
+              alt="Font rules for good web design"
+              class="slider-img slider--active"
+            />
           </div>
-        </div>`),
-    ''
-  );
+          <div class="slider-dots"></div>
+        </div>
+      </div>`;
+
+    return accu;
+  }, '');
   container.insertAdjacentHTML('afterbegin', markup);
 };
 buildSections(designSections);
+
+/**
+ * Populate the sliders of each design image slider (accordion)
+ * @param {Array} sections Sections info (img url, img count, ...)
+ */
+const populateSliders = function (sections) {
+  sections.forEach((section) => {
+    const container = document.querySelector(
+      `.design-${section.section.toLowerCase().replace(' ', '-')}`
+    );
+
+    let markup = '';
+    for (let i = 1; i <= section.imgCount; i++) {
+      markup += `
+        <img
+          src="${section.imgSrc}${i}.jpg"
+          alt="${section.imgAlt}"
+          class="slider-img ${i === 0 ? 'slider--active' : ''}"
+        />`;
+    }
+    container.insertAdjacentHTML('afterbegin', markup);
+  });
+};
+populateSliders(designSections);
 
 /**
  * Accordion Buttons: Drop down (& put away) the image carousel
@@ -79,7 +175,7 @@ const activateAccordionButton = function () {
     });
   }
 };
-// activateAccordionButton();
+activateAccordionButton();
 
 /**
  * Carousel Buttons: Slide images & reflect changes on bottom dots
@@ -149,4 +245,4 @@ const activateSliderButtons = function () {
     });
   });
 };
-// activateSliderButtons();
+activateSliderButtons();
